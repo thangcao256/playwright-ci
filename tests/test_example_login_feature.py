@@ -1,7 +1,7 @@
 from playwright.sync_api import Page
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
-import allure
+# import allure
 
 # @allure.feature("Login Feature")
 # @allure.story("Login Successfully")
