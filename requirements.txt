@@ -1,5 +1,6 @@
-pytest
-pytest-playwright
 playwright
-allure-pytest
-allure-python-commons
+pytest-playwright
+pytest
+pytest-html
+pytest-xdist
+
