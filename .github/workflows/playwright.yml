@@ -23,8 +23,12 @@ jobs:
           pip install -r requirements.txt
           playwright install
 
-      - name: Run Playwright tests
-        run: pytest tests/
+      - name: Run your tests
+        run: |
+          cd app
+          python -m http.server 8000 &
+          cd ..
+          pytest --tracing=retain-on-failure
 
       - name: Upload Playwright report (nếu có)
         if: ${{ always() }}
